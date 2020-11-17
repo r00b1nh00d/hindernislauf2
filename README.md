@@ -104,7 +104,7 @@ basic.forever(function () {
 
 ## Schritt 5 Schwierigkeit erhöhen
 Indem die eingestellte Zeit z.B. ``||basic:Pausiere 500 ||`` veringert wird läuft das Program schneller ab. Also um so kleiner die ``||basic:Pausiere||`` Zeit umso schwieriger ist das Spiel. Das Spiel kann auch von alleine schneller werden. Dafür muss die Zeit nur auf einer Variablen gespeichert werden und z.B. wenn ein Hinderniss den unteren Anzeigerand erreicht hat, diese Variable z.B. um 10 veringert werden.
- ```blocks
+```blocks
  let Spielfigur = game.createSprite(2, 4)
 let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
     let Zeit = 500
@@ -114,7 +114,8 @@ let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
         Zeit += -10
         Hindernis1.set(LedSpriteProperty.Y, 0)
         Hindernis1.set(LedSpriteProperty.X, Math.randomRange(0, 4))
-    ```
+        
+```
 
 
 ## ~avatar avatar @unplugged
@@ -122,7 +123,7 @@ let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
 
 Dieses Repository kann als **Tutorial** für MakeCode verwenden.
 
-öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf]
+öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/hindernislauf2]
 #### Metadaten (verwendet für Suche, Rendering)
 
 * for PXT/calliopemini
