@@ -12,8 +12,7 @@ input.onButtonPressed(Button.B, function () {
 input.onButtonPressed(Button.A, function () {
     Spielfigur.change(LedSpriteProperty.X, -1)
 })
-let Spielfigur: game.LedSprite = null
-Spielfigur = game.createSprite(2, 4)
+let Spielfigur = game.createSprite(2, 4)
 let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
 
 Hindernis1.turn(Direction.Right, 90)
@@ -49,8 +48,7 @@ Hindernis3.turn(Direction.Right, 90)
 Die Hindernisse 2 und 3 werden wie das erste Hindnis bewegt. Auch hier muss vor dem beweegen überprüft werden, ob das Hindernis schon außerhalb des Bildschirms ist. 
 Wichtig!: Wird ein ``||basic:Pausiere||`` Block nach dem Bewegen der drei Blöcke verwendet bewegen sich alle drei Hindernisse gleichzeitig wie eine Mauer. 
 ```blocks
-let Spielfigur: game.LedSprite = null
-Spielfigur = game.createSprite(2, 4)
+let Spielfigur = game.createSprite(2, 4)
 let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
 let Hindernis2 = game.createSprite(Math.randomRange(0, 4), 0)
 let Hindernis3 = game.createSprite(Math.randomRange(0, 4), 0)
@@ -84,8 +82,7 @@ if (Hindernis2.get(LedSpriteProperty.Y) == 4) {
 ## Schritt 4 Spiel Ende
 Auch wenn die Spielfigur das Hindernis 2 oder 3 berührt soll das Spiel beendet werden.
 ```blocks
-let Spielfigur: game.LedSprite = null
-Spielfigur = game.createSprite(2, 4)
+let Spielfigur = game.createSprite(2, 4)
 let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
 let Hindernis2 = game.createSprite(Math.randomRange(0, 4), 0)
 let Hindernis3 = game.createSprite(Math.randomRange(0, 4), 0)
@@ -108,8 +105,7 @@ basic.forever(function () {
 ## Schritt 5 Schwierigkeit erhöhen
 Indem die eingestellte Zeit z.B. ``||basic:Pausiere 500 ||`` veringert wird läuft das Program schneller ab. Also um so kleiner die ``||basic:Pausiere||`` Zeit umso schwieriger ist das Spiel. Das Spiel kann auch von alleine schneller werden. Dafür muss die Zeit nur auf einer Variablen gespeichert werden und z.B. wenn ein Hinderniss den unteren Anzeigerand erreicht hat, diese Variable z.B. um 10 veringert werden.
  ```blocks
- let Spielfigur: game.LedSprite = null
-Spielfigur = game.createSprite(2, 4)
+ let Spielfigur = game.createSprite(2, 4)
 let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
     let Zeit = 500
 
