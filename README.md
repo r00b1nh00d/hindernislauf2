@@ -115,3 +115,15 @@ let Hindernis1 = game.createSprite(Math.randomRange(0, 4), 0)
         Hindernis1.set(LedSpriteProperty.Y, 0)
         Hindernis1.set(LedSpriteProperty.X, Math.randomRange(0, 4))
     ```
+
+
+## ~avatar avatar @unplugged
+## Als Tutorial verwenden
+
+Dieses Repository kann als **Tutorial** für MakeCode verwenden.
+
+öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/Spiele_Programmieren_Lernen_Hindernislauf]
+#### Metadaten (verwendet für Suche, Rendering)
+
+* for PXT/calliopemini
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
